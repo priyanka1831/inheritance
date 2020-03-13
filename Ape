@@ -1,0 +1,17 @@
+package inheritance;
+
+public class Ape extends Species {
+	protected int tails;
+
+	/**
+	 * @param tails
+	 */
+	Ape(){}
+	public Ape(int tails) {
+		super();
+		System.out.println("Ape created");
+	
+	}
+	
+ 
+}
