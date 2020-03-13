@@ -1,0 +1,41 @@
+package inheritance;
+
+enum ticketType{BusTicket,TrainTicket,FlightTicket}
+
+abstract class Ticket
+{
+	String ticketNumber;
+	int tickettype;
+	public abstract boolean  bookTicket(String transport);
+	//defining a method
+	public void showTicket()
+	{
+	System.out.println("Ticket number:"+ticketNumber);	
+	System.out.println("Ticket Type:(General/season)"+tickettype);
+	}
+}
+class Busticket extends Ticket
+{
+	public String fromStation;
+	public String toStation;
+
+    public boolean bookTicket(String trpt)
+    {
+		
+		return true;
+	}
+	
+}
+  public class Ticketdemo {
+	
+	public static void main(String[] args){
+		Busticket bt=new Busticket();
+		boolean ticketBooked=bt.bookTicket("AP0123");
+		if(ticketBooked)
+			System.out.println(ticketType.BusTicket);
+		
+		
+	}
+	
+
+}
