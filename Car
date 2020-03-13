@@ -1,0 +1,59 @@
+package inheritance;
+
+public class Car implements  Transport {
+	
+	private String carName;
+	private String carModel;
+	private static int wheels;
+	private static int seats;
+	/**
+	 * 
+	 */
+	public Car() {
+		super();
+		System.out.println("Car created");
+	}
+	/**
+	 * @param carName
+	 * @param carModel
+	 */
+	//overloaded constructor
+	public Car(String carName,String carModel){
+		//super();
+		this.carName = carName;
+		this.carModel = carModel;
+	
+	}
+	public String getCarName() {
+		return carName;
+	}
+	public void setCarName(String carName) {
+		this.carName = carName;
+	}
+	public String getCarModel() {
+		return carModel;
+	}
+	public void setCarModel(String carModel) {
+		this.carModel = carModel;
+	}
+	public static int getWheels() {
+		return wheels;
+	}
+	public static void setWheels(int wheels) {
+		Car.wheels = wheels;
+	}
+	public static int getSeats() {
+		return seats;
+	}
+	public static void setSeats(int seats) {
+		Car.seats = seats;
+	}
+	public void start(){
+		System.out.println("Car starts");
+	}
+	public void stop(){
+		System.out.println("Car stops");
+		
+	}
+}
+	
