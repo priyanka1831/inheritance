@@ -1,0 +1,26 @@
+package inheritance;
+
+public class Cardemo {
+	
+	public static void main(String args[]){
+		Car mycar=new Car("Santro","Xing");
+		
+		System.out.println("Car Name:"+mycar.getCarName());
+		System.out.println("Model:"+mycar.getCarModel());
+		
+		Racecar rc=new Racecar();
+		
+		rc.setCarModel("MOdel 1000");
+		rc.setCarName("RacecarOne");
+		rc.setGears(6);
+		rc.setSeats(1);
+		rc.setWheels(4);
+		//A super class reference can hold subclass instance
+		Car yourcar=new Racecar();
+		//casting
+		Racecar manoharcar=(Racecar)new Car();
+		
+		
+	}
+
+}
