@@ -1,0 +1,14 @@
+package inheritance;
+
+public class Human extends Ape {
+	
+	private int heads;
+	private int hands;
+	private int legs;
+	
+	Human() 
+	{
+		System.out.println("Human object created");
+	}
+
+}
