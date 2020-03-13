@@ -1,0 +1,13 @@
+package inheritance;
+
+public class Species {
+	//attributes
+	protected String speciesName;
+	//no-arg constructor
+	Species()
+	{
+		System.out.println("Species constructed");
+	}
+	
+
+}
