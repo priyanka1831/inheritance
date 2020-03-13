@@ -1,0 +1,19 @@
+package inheritance;
+
+public class Multileveldemo{
+
+	
+	public static void main(String args[])
+	{
+		Human h=new Human();
+   h.speciesName="living";
+   h.tails=0;
+   Ape a=new Ape();
+   a.tails=1;
+		
+	
+		
+	}
+
+}
+
